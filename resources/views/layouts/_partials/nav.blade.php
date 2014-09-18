@@ -11,7 +11,7 @@
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li><a href="#info" data-toggle="modal" data-target=".om-modal">Info</a></li>
+                <li><a href="#info" data-toggle="modal" data-target=".om-modal" id="information">Info</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="http://kaugesaar.se" target="_blank">Kaugesaar.se</a></li></li>

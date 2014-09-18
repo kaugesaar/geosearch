@@ -12,6 +12,8 @@ body {
 
 .search-holder {
     max-width: 870px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .text-fade {

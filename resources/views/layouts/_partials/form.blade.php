@@ -17,8 +17,8 @@
     <div class="form-group">
         <div class="col-sm-4 col-sm-push-4">
             <div class="text-center">
-                {!! Form::submit('Search !', ['class' => 'btn btn-primary btn-lg ']) !!}
-                <a href="#settings" class="btn btn-lg btn-default" data-toggle="modal" data-target=".form-modal">Settings</a>
+                {!! Form::submit('Search !', ['class' => 'btn btn-primary btn-lg ', 'id' => 'submit' ]) !!}
+                <a href="#settings" id="setting" class="btn btn-lg btn-default" data-toggle="modal" data-target=".form-modal">Settings</a>
             </div>
         </div>
     </div>
