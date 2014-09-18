@@ -10,6 +10,7 @@ class GeoSearch {
      */
     public $domain = 'se';
 
+
     /**
      * Append pws parameter to url
      *
@@ -59,8 +60,7 @@ class GeoSearch {
      */
     public function build($input = [])
     {
-
-        $baseUrl = $this->setBaseUrl($this->domain);
+        $baseUrl = $this->getBaseUrl($this->domain);
         $hash = $this->makeHash($input['location']);
         $params = [
             'q' => $input['query'],
@@ -74,14 +74,17 @@ class GeoSearch {
 
     }
 
+
     /**
-     * @param $domain
+     * Get the Base URL
      *
+     * @param $domain
      * @return string
      */
-    private function setBaseUrl($domain)
+    public function getBaseUrl($domain)
     {
-        return 'http://www.google.'.$domain.'/search?';
+        return 'https://www.google.'.$domain.'/search?';
     }
 
-} 
+
+}

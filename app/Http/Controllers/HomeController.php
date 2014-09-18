@@ -1,15 +1,15 @@
 <?php namespace Geosearch\Http\Controllers;
 
-use Geosearch\Services\GeoSearch;
 use Geosearch\Http\Requests\SearchRequest;
+use Geosearch\Services\GeoSearch;
 use Illuminate\Routing\Controller;
 
 class HomeController extends Controller {
 
-	public function index()
-	{
-		return view('pages.home');
-	}
+    public function index()
+    {
+        return view('pages.home');
+    }
 
     public function post(GeoSearch $search, SearchRequest $request)
     {
